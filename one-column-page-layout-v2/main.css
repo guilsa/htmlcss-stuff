@@ -1,0 +1,40 @@
+nav, footer {
+  /* clear */
+  /*
+  - clear is a key concept in position elements.
+  - this property allows you to say no element
+  should touch the left or right-hand sides
+  of a box.
+  */
+  clear: both;
+  color: #ffffff;
+  background-color: #3498db;
+  height: 30px;
+}
+nav ul {
+  margin: 0px;
+  padding: 5px 0px 5px 30px;
+}
+nav li {
+  display: inline;
+  margin-right: 40px;
+}
+main {
+  color: #ffffff;
+  margin-top: 10px;
+  background-color: #c0392b;
+  text-align: center;
+  height: 500px;
+}
+footer {
+  margin-top: 10px;
+  background-color: #e74c3c;
+  height: 100px;
+}
+.centered {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
