@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #FF6347;
+  height: 80px;
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+
+.main {
+  background-color: #00BFFF;
+  order: 3;
+}
+
+.aside {
+  width: 300px;
+}
+
+.aside-1 {
+  background-color: #FFD700;
+  order: 2;
+}
+
+.aside-2 {
+  background-color: #FF69B4;
+  order: 3;
+}
+
+.footer {
+  background-color: #90EE90;
+  order: 4;
+  height: 80px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main {
+    background-color: black;
+  }
+  aside {
+    display: none;
+  }
+}
