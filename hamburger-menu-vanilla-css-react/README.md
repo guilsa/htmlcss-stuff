@@ -7,7 +7,7 @@ Implemented a hamburger menu by hand with plain CSS (no framework used), in Reac
 - [x] hamburger menu, no css framework
 - [x] modular css
 - [x] json server on webpack]
-- [] Implement Redux
+- [ ] Implement Redux
 
 ## Install
 
