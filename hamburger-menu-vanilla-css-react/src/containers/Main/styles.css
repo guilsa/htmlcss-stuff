@@ -1,0 +1,52 @@
+main, hr {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    margin: 20px;
+  }
+}
+
+/*
+Shared across children of MainContainer
+*/
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article img {
+  width: auto;
+  max-width: 300px;
+  height: auto;
+  max-height: 185px;
+}
+
+article p {
+  margin-top: 15px;
+  color: #8D8D8D;
+  margin-right: 35px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+hr {
+  border-top: 1px solid #FEFEFE;
+}
+
+.left {
+  flex-grow: 1;
+  flex-basis: 391px;
+}

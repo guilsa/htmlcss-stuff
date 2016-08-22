@@ -1,0 +1,95 @@
+nav {
+  position: relative;
+  background-color: #EEEEEE;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+input[type=checkbox], .toggleMenu {
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  position: relative;
+  top: 14px;
+  left: 15px;
+  /*place checkbox above toggleMenu*/
+  z-index: 2;
+}
+
+.toggleMenu {
+  /*place the hamburger menu under the checkbox*/
+  z-index: 1;
+  position: relative;
+  top: -10px;
+  left: -25px;
+  visibility: hidden;
+  font-size: 20px;
+}
+
+/* default position for our ul #menu */
+/* layer it over the nav bar */
+#menu {
+  position: absolute;
+  top: 14px;
+  width: 95%;
+}
+
+#menu li {
+  display: inline-block;
+  padding-right: 25px;
+}
+
+#menu li:last-child {
+  float: right;
+}
+
+input[type=checkbox] {
+  /*hide checkbox*/
+  opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+  input[type=checkbox]:checked ~ #menu > li:first-child {
+    display: none;
+  }
+
+  #menu {
+    visibility: hidden;
+  }
+
+  .toggleMenu {
+    visibility:visible;
+  }
+
+  nav {
+    background-color: black;
+    color: white;
+  }
+
+  input[type=checkbox]:checked ~ #menu {
+    /* place #menu back into doc flow and display it */
+    position: static;
+    background-color: #EEEEEE;
+    visibility: visible;
+    padding: 20px, 0;
+  }
+
+  input[type=checkbox]:checked ~ #menu > li {
+    display: block;
+    padding-bottom: 22px;
+  }
+
+  input[type=checkbox]:checked ~ #menu > li:nth-child(2) {
+    padding-top: 22px;
+  }
+
+  input[type=checkbox]:checked ~ #menu > li:last-child {
+    float:none;
+  }
+
+}
